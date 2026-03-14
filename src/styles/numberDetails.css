@@ -1,0 +1,14 @@
+.number-details {
+  padding: 20px;
+}
+
+.number-details img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px; /* space between image and text */
+}
+
+.number-details div {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,69 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+.number-box {
+  background-color: white;
+  box-shadow: 10px 10px 5px gray;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+}
+
+.number-box:hover {
+  transform: translateY(-8px);          /* lift the card up */
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.3); /* stronger shadow */
+}
+
+.box-header {
+  display: flex;
+}
+
+.box-image img {
+  margin: 10px;
+  width: 180px;
+  height: 200px;
+}
+
+.box-number {
+  font-size: 80px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.box-text {
+  padding: 20px;
+}
+
+.number-box a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (max-width: 750px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .box-image img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
