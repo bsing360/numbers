@@ -1,7 +1,8 @@
 {
   "name": "numbers-bible-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://bsing360.github.io/numbers",
   "type": "module",
   "scripts": {
     "dev": "vite",
