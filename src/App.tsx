@@ -1,19 +1,21 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from "./components/Header"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
 import NumberDetails from "./components/NumberDetails"
+import { Routes, Route } from "react-router-dom"
+
+import "./styles/general.css"
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/number/:id" element={<NumberDetails />} />
+        <Route path="/number/:numberId" element={<NumberDetails />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   )
 }
 

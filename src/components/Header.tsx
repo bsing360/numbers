@@ -6,14 +6,23 @@ function Header() {
       <div></div>
 
       <div className="header-container">
+        {/* Left image */}
         <div className="header-image-left">
-          <img src="/images/header-numbers.jpg" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/header-numbers.jpg`}
+            alt="Numbers"
+          />
         </div>
 
+        {/* Center heading */}
         <div className="heading">Numbers in the Bible</div>
 
+        {/* Right image */}
         <div className="header-image-right">
-          <img src="/images/header-bible.jpg" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/header-bible.jpg`}
+            alt="Bible"
+          />
         </div>
       </div>
 
@@ -22,4 +31,4 @@ function Header() {
   )
 }
 
-export default Header;
+export default Header
