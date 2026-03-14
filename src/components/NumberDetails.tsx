@@ -10,7 +10,7 @@ function NumberDetails() {
 
   return (
     <div className="number-details">
-      <Link to="/">← Back to grid</Link>
+      <Link to="/"><button>← Back to grid</button></Link>
       <h1>{number.number}</h1>
       <img src={number.image} alt={`Number ${number.number}`} />
       <div dangerouslySetInnerHTML={{ __html: number.htmlText }} />
